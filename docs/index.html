@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TurboWarp HTTP Server React</title>
+  <style>
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:900px;margin:0 auto;padding:2rem;line-height:1.6;color:#222}
+    code{background:#f3f3f3;padding:.1em .3em;border-radius:.25em}
+    pre{background:#f6f8fa;padding:1rem;overflow:auto;border-radius:.5rem}
+  </style>
+</head>
+<body>
+  <h1>TurboWarp HTTP Server React</h1>
+  <p>This extension describes React islands for HTML responses produced by turbowarp-http-server and turbowarp-html.</p>
+
+  <h2>Blocks</h2>
+  <ul>
+    <li><code>register React component [COMPONENT] from [MODULE]</code></li>
+    <li><code>React island [COMPONENT] at [MOUNT_ID] props [PROPS_JSON]</code></li>
+    <li><code>React island HTML [COMPONENT] at [MOUNT_ID] props [PROPS_JSON]</code></li>
+    <li><code>React component registry JSON</code></li>
+  </ul>
+
+  <h2>MVP boundary</h2>
+  <p>The extension returns descriptors and HTML fragments. React, React DOM, MUI, hooks, CSS, hydration, and Vite dev/build integration belong to the application bundle.</p>
+
+  <h2>Descriptor shape</h2>
+  <pre><code>{
+  "kind": "react-island",
+  "version": 1,
+  "component": "Counter",
+  "mountId": "counter-root",
+  "props": {"initialCount": 0}
+}</code></pre>
+</body>
+</html>

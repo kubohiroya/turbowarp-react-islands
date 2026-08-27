@@ -1,0 +1,62 @@
+{
+  "formatVersion": 1,
+  "id": "kubohiroyatwhttpreact",
+  "blocks": [
+    {
+      "opcode": "componentRegistryJson",
+      "blockType": "REPORTER",
+      "arguments": []
+    },
+    {
+      "opcode": "reactIsland",
+      "blockType": "REPORTER",
+      "arguments": [
+        {
+          "id": "COMPONENT",
+          "type": "STRING"
+        },
+        {
+          "id": "MOUNT_ID",
+          "type": "STRING"
+        },
+        {
+          "id": "PROPS_JSON",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "opcode": "reactIslandHtml",
+      "blockType": "REPORTER",
+      "arguments": [
+        {
+          "id": "COMPONENT",
+          "type": "STRING"
+        },
+        {
+          "id": "MOUNT_ID",
+          "type": "STRING"
+        },
+        {
+          "id": "PROPS_JSON",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "opcode": "registerComponent",
+      "blockType": "COMMAND",
+      "arguments": [
+        {
+          "id": "COMPONENT",
+          "type": "STRING"
+        },
+        {
+          "id": "MODULE",
+          "type": "STRING"
+        }
+      ]
+    }
+  ],
+  "menus": []
+}
