@@ -19,7 +19,7 @@ MVPでは、TurboWarp内でReactを実行しきることはしません。まず
 ## インストール
 
 ```bash
-pnpm add --save-exact @kubohiroya/turbowarp-http-server-react@0.1.0
+pnpm add --save-exact @kubohiroya/turbowarp-http-server-react@0.2.0
 ```
 
 ## できること
