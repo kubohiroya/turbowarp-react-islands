@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "productName": "TurboWarp HTTP Server React",
+  "productName": "TurboWarp React Islands",
   "packageType": "extension",
   "licensePolicy": "mpl-2.0",
   "readmeLanguages": ["en", "ja"],

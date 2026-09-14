@@ -1,16 +1,16 @@
 {
-  "name": "@kubohiroya/turbowarp-http-server-react",
-  "version": "0.1.0",
+  "name": "@kubohiroya/turbowarp-react-islands",
+  "version": "0.2.0",
   "description": "TurboWarp extension and helpers for describing React islands in turbowarp-http-server HTML responses.",
   "author": "Hiroya Kubo <hiroya@cuc.ac.jp>",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/kubohiroya/turbowarp-http-server-react#readme",
+  "homepage": "https://github.com/kubohiroya/turbowarp-react-islands#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kubohiroya/turbowarp-http-server-react.git"
+    "url": "git+https://github.com/kubohiroya/turbowarp-react-islands.git"
   },
   "bugs": {
-    "url": "https://github.com/kubohiroya/turbowarp-http-server-react/issues"
+    "url": "https://github.com/kubohiroya/turbowarp-react-islands/issues"
   },
   "keywords": [
     "turbowarp",

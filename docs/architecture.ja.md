@@ -4,7 +4,7 @@
 
 ## 目的
 
-`turbowarp-http-server-react` は、TurboWarpで書いたHTTP/HTML生成ロジックからReact componentを直接実行するのではなく、React islandを埋め込むための中間記述を作るパッケージです。
+`turbowarp-react-islands` は、TurboWarpで書いたHTTP/HTML生成ロジックからReact componentを直接実行するのではなく、React islandを埋め込むための中間記述を作るパッケージです。
 
 教育的には、ブロックプログラミングからReactプログラミングへ段階的に移行する橋渡しを狙います。実用面では、MUIなどの成熟したReact componentを使いながら、ページ構成やprops指定の一部をブロックで扱えるようにします。
 
