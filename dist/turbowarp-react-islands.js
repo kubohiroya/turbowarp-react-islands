@@ -1,5 +1,5 @@
-// Name: TurboWarp HTTP Server React
-// ID: kubohiroyatwhttpreact
+// Name: TurboWarp React Islands
+// ID: kubohiroyareactislands
 // Description: Describe React islands from TurboWarp blocks for turbowarp-http-server HTML responses.
 // By: Hiroya Kubo
 // License: MPL-2.0
@@ -8,11 +8,11 @@
   'use strict';
 
   const extensionConfig = {
-    id: "kubohiroyatwhttpreact",
-    docsURI: "https://kubohiroya.github.io/turbowarp-http-server-react/",
+    id: "kubohiroyareactislands",
+    docsURI: "https://kubohiroya.github.io/turbowarp-react-islands/",
     blockIconURI: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHJlY3QgeD0iNCIgeT0iOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0IiByeD0iMyIgZmlsbD0iIzRDOTdGRiIvPjxyZWN0IHg9IjI2IiB5PSI4IiB3aWR0aD0iMTgiIGhlaWdodD0iMTQiIHJ4PSIzIiBmaWxsPSIjNTlDMDU5Ii8+PHJlY3QgeD0iMTUiIHk9IjI2IiB3aWR0aD0iMTgiIGhlaWdodD0iMTQiIHJ4PSIzIiBmaWxsPSIjRkZBQjE5Ii8+PC9zdmc+"
   };
-  const extensionName = "TurboWarp HTTP Server React";
+  const extensionName = "TurboWarp React Islands";
   const blocks = [{ "opcode": "registerComponent", "blockType": "COMMAND", "text": "register React component [COMPONENT] from [MODULE]", "description": "Registers a React component name and the browser module that will hydrate it later.", "arguments": { "COMPONENT": { "type": "STRING", "defaultValue": "Counter" }, "MODULE": { "type": "STRING", "defaultValue": "/assets/react-islands.js" } } }, { "opcode": "reactIsland", "blockType": "REPORTER", "text": "React island [COMPONENT] at [MOUNT_ID] props [PROPS_JSON]", "description": "Returns a JSON mount descriptor for a React island.", "arguments": { "COMPONENT": { "type": "STRING", "defaultValue": "Counter" }, "MOUNT_ID": { "type": "STRING", "defaultValue": "counter-root" }, "PROPS_JSON": { "type": "STRING", "defaultValue": '{"initialCount":0}' } } }, { "opcode": "reactIslandHtml", "blockType": "REPORTER", "text": "React island HTML [COMPONENT] at [MOUNT_ID] props [PROPS_JSON]", "description": "Returns a safe HTML fragment that marks where a React island should be mounted.", "arguments": { "COMPONENT": { "type": "STRING", "defaultValue": "Counter" }, "MOUNT_ID": { "type": "STRING", "defaultValue": "counter-root" }, "PROPS_JSON": { "type": "STRING", "defaultValue": '{"initialCount":0}' } } }, { "opcode": "componentRegistryJson", "blockType": "REPORTER", "text": "React component registry JSON", "description": "Returns the registered React component registry as JSON.", "arguments": {} }];
   const definitions = {
     extensionName,

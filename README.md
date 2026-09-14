@@ -1,4 +1,4 @@
-# TurboWarp HTTP Server React
+# TurboWarp React Islands
 
 [日本語](README.ja.md)
 
@@ -22,7 +22,7 @@ descriptors and HTML fragments that a later build step can consume.
 ## Installation
 
 ```bash
-pnpm add --save-exact @kubohiroya/turbowarp-http-server-react@0.1.0
+pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.2.0
 ```
 
 ## What it does
@@ -132,7 +132,7 @@ Extension config + block definitions
 TurboWarp extension source
   -> Vite
   -> vite-plugin-turbowarp-extension
-  -> dist/turbowarp-http-server-react.js
+  -> dist/turbowarp-react-islands.js
 ```
 
 See [the architecture document](docs/architecture.md) and the
@@ -154,7 +154,7 @@ pnpm run check
 npm pack --dry-run --ignore-scripts
 ```
 
-Release artifacts include `dist/turbowarp-http-server-react.js`,
+Release artifacts include `dist/turbowarp-react-islands.js`,
 `dist/extension-manifest.json`, `README.md`, `README.ja.md`, and `LICENSE`.
 
 ## License

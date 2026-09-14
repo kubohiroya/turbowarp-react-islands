@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/kubohiroya/turbowarp-http-server-react/main/schemas/extension-manifest.schema.json",
+  "$id": "https://raw.githubusercontent.com/kubohiroya/turbowarp-react-islands/main/schemas/extension-manifest.schema.json",
   "title": "TurboWarp Extension API Manifest",
   "type": "object",
   "additionalProperties": false,

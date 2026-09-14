@@ -58,7 +58,7 @@ describe('TurboWarpHttpServerReactExtension', () => {
       name: string;
       blocks: Array<{text: string; blockType: string}>;
     };
-    expect(info.name).toBe('TurboWarp HTTP Server React');
+    expect(info.name).toBe('TurboWarp React Islands');
     expect(info.blocks[0]?.text).toBe('register React component [COMPONENT] from [MODULE]');
     expect(info.blocks[0]?.blockType).toBe('command');
   });
@@ -68,7 +68,7 @@ describe('TurboWarpHttpServerReactExtension', () => {
       docsURI: string;
       blockIconURI: string;
     };
-    expect(info.docsURI).toBe('https://kubohiroya.github.io/turbowarp-http-server-react/');
+    expect(info.docsURI).toBe('https://kubohiroya.github.io/turbowarp-react-islands/');
     expect(info.blockIconURI).toMatch(/^data:image\/svg\+xml;base64,/);
   });
 });

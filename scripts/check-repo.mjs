@@ -27,7 +27,7 @@ process.stdout.write('Repository policy is aligned.\n');
 
 function checkPolicy() {
   if (policy.schemaVersion !== 1) errors.push('repo-policy.json schemaVersion must be 1');
-  if (policy.productName !== 'TurboWarp HTTP Server React') {
+  if (policy.productName !== 'TurboWarp React Islands') {
     errors.push('repo-policy.json productName must match README.md H1');
   }
   if (policy.licensePolicy !== 'mpl-2.0') {
@@ -55,10 +55,10 @@ function checkPackageMetadata() {
   if (packageMetadata.engines?.node !== '>=22') {
     errors.push('package.json engines.node must be >=22');
   }
-  if (packageMetadata.repository?.url !== 'git+https://github.com/kubohiroya/turbowarp-http-server-react.git') {
+  if (packageMetadata.repository?.url !== 'git+https://github.com/kubohiroya/turbowarp-react-islands.git') {
     errors.push('package.json repository.url must point to the current repository');
   }
-  if (packageMetadata.bugs?.url !== 'https://github.com/kubohiroya/turbowarp-http-server-react/issues') {
+  if (packageMetadata.bugs?.url !== 'https://github.com/kubohiroya/turbowarp-react-islands/issues') {
     errors.push('package.json bugs.url must point to the current issue tracker');
   }
   for (const file of policy.requiredFiles) {

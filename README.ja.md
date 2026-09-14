@@ -1,4 +1,4 @@
-# TurboWarp HTTP Server React
+# TurboWarp React Islands
 
 [English](README.md)
 
@@ -19,7 +19,7 @@ MVPでは、TurboWarp内でReactを実行しきることはしません。まず
 ## インストール
 
 ```bash
-pnpm add --save-exact @kubohiroya/turbowarp-http-server-react@0.1.0
+pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.2.0
 ```
 
 ## できること
@@ -77,7 +77,7 @@ React component source + hooks
 TurboWarp extension source
   -> Vite
   -> vite-plugin-turbowarp-extension
-  -> dist/turbowarp-http-server-react.js
+  -> dist/turbowarp-react-islands.js
 ```
 
 React componentやMUI componentは通常のTypeScript/Reactプロジェクトとして書きます。ブロック側は、component名、mount ID、JSON propsといった宣言的な接続面に集中します。
