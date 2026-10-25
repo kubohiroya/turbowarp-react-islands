@@ -1,16 +1,16 @@
 {
-  "name": "@kubohiroya/turbowarp-http-server-react",
-  "version": "0.2.0",
+  "name": "@kubohiroya/turbowarp-react-islands",
+  "version": "0.3.1",
   "description": "TurboWarp extension and helpers for describing React islands in turbowarp-http-server HTML responses.",
   "author": "Hiroya Kubo <hiroya@cuc.ac.jp>",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/kubohiroya/turbowarp-http-server-react#readme",
+  "homepage": "https://github.com/kubohiroya/turbowarp-react-islands#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kubohiroya/turbowarp-http-server-react.git"
+    "url": "git+https://github.com/kubohiroya/turbowarp-react-islands.git"
   },
   "bugs": {
-    "url": "https://github.com/kubohiroya/turbowarp-http-server-react/issues"
+    "url": "https://github.com/kubohiroya/turbowarp-react-islands/issues"
   },
   "keywords": [
     "turbowarp",
@@ -27,11 +27,11 @@
   "files": [
     "dist/",
     "docs/",
-    "schemas/",
     "src/",
     "README.md",
     "README.ja.md",
-    "LICENSE"
+    "LICENSE",
+    "schemas/"
   ],
   "exports": {
     "./island": {
@@ -62,12 +62,23 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
-    "@kubohiroya/vite-plugin-turbowarp-extension": "0.4.0",
+    "@kubohiroya/turbowarp-extension-manifest": "0.3.2",
+    "@kubohiroya/vite-plugin-turbowarp-extension": "0.6.1",
     "@types/node": "^24.13.3",
     "eslint": "^9.39.5",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.66.0",
     "vite": "^8.2.2",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "react-dom": "18.3.1"
+  },
+  "dependencies": {
+    "@kubohiroya/turbowarp-extension-data-editor": "0.2.1"
+  },
+  "gitHead": "07b524c620ad8a8a491fc3d33d87dad584235354",
+  "x-turbowarp-source": {
+    "revision": "07b524c620ad8a8a491fc3d33d87dad584235354",
+    "revisionRole": "base-commit",
+    "sourceState": "local-release-overlay"
   }
 }

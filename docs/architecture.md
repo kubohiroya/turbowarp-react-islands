@@ -4,7 +4,7 @@
 
 ## Goal
 
-`turbowarp-http-server-react` describes React islands from TurboWarp blocks. It does not execute React inside TurboWarp. The output is a stable descriptor and HTML fragment that `turbowarp-html`, `turbowarp-http-server`, and a later Vite build step can consume.
+`turbowarp-react-islands` describes React islands from TurboWarp blocks. It does not execute React inside TurboWarp. The output is a stable descriptor and HTML fragment that `turbowarp-html`, `turbowarp-http-server`, and a later Vite build step can consume.
 
 ## Responsibilities
 

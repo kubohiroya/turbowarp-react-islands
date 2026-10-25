@@ -1,5 +1,5 @@
 {
-  "extensionName": "TurboWarp HTTP Server React",
+  "extensionName": "TurboWarp React Islands",
   "blocks": [
     {
       "opcode": "registerComponent",
