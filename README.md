@@ -1,5 +1,7 @@
 # TurboWarp React Islands
 
+<img src="assets/block-icon.svg" alt="" width="48" height="48">
+
 [日本語](README.ja.md)
 
 TurboWarp extension and TypeScript helpers for describing React islands inside
