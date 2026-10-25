@@ -1,5 +1,7 @@
 # TurboWarp React Islands
 
+<img src="assets/block-icon.svg" alt="" width="48" height="48">
+
 [English](README.md)
 
 `turbowarp-http-server` と `turbowarp-html` で作るHTMLレスポンスの一部に、Reactコンポーネントを island として埋め込むためのTurboWarp拡張とTypeScriptヘルパーです。
