@@ -34,7 +34,7 @@ pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.4.0
 
 ## 要件と注意
 
-- Node.js 22以上
+- Node.js 24以上
 - Corepack経由のpnpm
 - TurboWarp
 - HTTP/HTML合成に使う `turbowarp-http-server` と `turbowarp-html`
@@ -45,6 +45,7 @@ propsはJSONに限定します。関数、class instance、DOM node、hooksの�
 ## 開発
 
 ```bash
+npm install --global corepack@latest
 corepack enable
 pnpm install --frozen-lockfile
 pnpm run check

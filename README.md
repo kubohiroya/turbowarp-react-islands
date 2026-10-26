@@ -37,7 +37,7 @@ pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.4.0
 
 ## Requirements and safety
 
-- Node.js 22 or newer;
+- Node.js 24 or newer;
 - pnpm through Corepack;
 - TurboWarp;
 - `turbowarp-http-server` and `turbowarp-html` for HTTP/HTML composition;
@@ -49,6 +49,7 @@ state are intentionally outside the block contract.
 ## Development
 
 ```bash
+npm install --global corepack@latest
 corepack enable
 pnpm install --frozen-lockfile
 ```
