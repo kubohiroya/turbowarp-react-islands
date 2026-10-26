@@ -24,7 +24,7 @@ descriptors and HTML fragments that a later build step can consume.
 ## Installation
 
 ```bash
-pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.3.1
+pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.4.0
 ```
 
 ## What it does
