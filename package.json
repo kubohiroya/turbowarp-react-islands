@@ -1,6 +1,6 @@
 {
   "name": "@kubohiroya/turbowarp-react-islands",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "TurboWarp extension and helpers for describing React islands in turbowarp-http-server HTML responses.",
   "author": "Hiroya Kubo <hiroya@cuc.ac.jp>",
   "license": "MPL-2.0",
@@ -64,7 +64,7 @@
   "devDependencies": {
     "@eslint/js": "^9.39.5",
     "@kubohiroya/turbowarp-extension-manifest": "^0.3.2",
-    "@kubohiroya/vite-plugin-turbowarp-extension": "^0.6.1",
+    "@kubohiroya/vite-plugin-turbowarp-extension": "^0.8.0",
     "@types/node": "^24.13.3",
     "eslint": "^9.39.5",
     "typescript": "^5.9.3",
@@ -74,11 +74,11 @@
     "react-dom": "18.3.1"
   },
   "dependencies": {
-    "@kubohiroya/turbowarp-extension-data-editor": "^0.3.3"
+    "@kubohiroya/turbowarp-extension-data-editor": "^0.3.4"
   },
-  "gitHead": "07b524c620ad8a8a491fc3d33d87dad584235354",
+  "gitHead": "5fce099d61bbe6e24e44e498c6cb8d0dce3851dc",
   "x-turbowarp-source": {
-    "revision": "07b524c620ad8a8a491fc3d33d87dad584235354",
+    "revision": "5fce099d61bbe6e24e44e498c6cb8d0dce3851dc",
     "revisionRole": "base-commit",
     "sourceState": "local-release-overlay"
   }
