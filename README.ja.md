@@ -6,6 +6,18 @@
 
 `turbowarp-http-server` と `turbowarp-html` で作るHTMLレスポンスの一部に、Reactコンポーネントを island として埋め込むためのTurboWarp拡張とTypeScriptヘルパーです。
 
+## 実行できるサンプル
+
+[**TurboWarp Editorでデモを開く**](https://turbowarp.org/editor?project_url=https%3A%2F%2Fkubohiroya.github.io%2Fturbowarp-react-islands%2Fsamples%2Fdescribe-counter-island.sb3) · [SB3をダウンロード](https://kubohiroya.github.io/turbowarp-react-islands/samples/describe-counter-island.sb3)
+
+**Allow**で許可し、緑の旗を押します。
+3つの確認結果がtrueになります。変数一覧には実際のJSON descriptor・HTML・registry全文も保持します。宣言生成のみのデモでReactの描画やhydrationは行いません。Counterのmoduleパスは登録する文字列であり、このデモでは取得しません。React本体・HTTPホスト・外部bundleは不要です。
+
+
+
+元データと期待結果: [`samples/README.md`](samples/README.md).
+`pnpm run samples:build` / `pnpm run samples:check` / `pnpm run pages:build`
+
 ## 位置づけ
 
 このパッケージでは、Reactをアプリ全体の記述言語ではなく「リッチなGUI部品」として扱います。想定する役割分担は次の通りです。
