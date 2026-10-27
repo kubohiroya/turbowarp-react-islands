@@ -21,7 +21,7 @@ MVPでは、TurboWarp内でReactを実行しきることはしません。まず
 ## インストール
 
 ```bash
-pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.4.0
+pnpm add --save-exact @kubohiroya/turbowarp-react-islands@0.5.0
 ```
 
 ## できること
