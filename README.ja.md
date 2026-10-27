@@ -2,7 +2,7 @@
 
 <img src="assets/block-icon.svg" alt="" width="48" height="48">
 
-[English](README.md)
+[English](README.md) | 日本語
 
 `turbowarp-http-server` と `turbowarp-html` で作るHTMLレスポンスの一部に、Reactコンポーネントを island として埋め込むためのTurboWarp拡張とTypeScriptヘルパーです。
 
