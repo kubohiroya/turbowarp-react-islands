@@ -1,0 +1,529 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "sample-state": [
+          "Sample state",
+          ""
+        ],
+        "sample-descriptor": [
+          "Descriptor JSON",
+          ""
+        ],
+        "sample-html": [
+          "HTML fragment",
+          ""
+        ],
+        "sample-registry": [
+          "Registry JSON",
+          ""
+        ],
+        "sample-has-counter": [
+          "Descriptor has Counter",
+          ""
+        ],
+        "sample-html-mount": [
+          "HTML has mount marker",
+          ""
+        ],
+        "sample-props": [
+          "Descriptor has count 3",
+          ""
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "b1": {
+          "opcode": "event_whenflagclicked",
+          "parent": null,
+          "next": "b2",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 35,
+          "y": 35
+        },
+        "b2": {
+          "opcode": "data_setvariableto",
+          "parent": "b1",
+          "next": "b3",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "Running"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "Sample state",
+              "sample-state"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b3": {
+          "opcode": "kubohiroyareactislands_registerComponent",
+          "parent": "b2",
+          "next": "b4",
+          "inputs": {
+            "COMPONENT": [
+              1,
+              [
+                10,
+                "Counter"
+              ]
+            ],
+            "MODULE": [
+              1,
+              [
+                10,
+                "/assets/counter.js"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b4": {
+          "opcode": "data_setvariableto",
+          "parent": "b3",
+          "next": "b6",
+          "inputs": {
+            "VALUE": [
+              3,
+              "b5",
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "Descriptor JSON",
+              "sample-descriptor"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b5": {
+          "opcode": "kubohiroyareactislands_reactIsland",
+          "parent": "b4",
+          "next": null,
+          "inputs": {
+            "COMPONENT": [
+              1,
+              [
+                10,
+                "Counter"
+              ]
+            ],
+            "MOUNT_ID": [
+              1,
+              [
+                10,
+                "counter-root"
+              ]
+            ],
+            "PROPS_JSON": [
+              1,
+              [
+                10,
+                "{\"initialCount\":3}"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b6": {
+          "opcode": "data_setvariableto",
+          "parent": "b4",
+          "next": "b8",
+          "inputs": {
+            "VALUE": [
+              3,
+              "b7",
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "HTML fragment",
+              "sample-html"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b7": {
+          "opcode": "kubohiroyareactislands_reactIslandHtml",
+          "parent": "b6",
+          "next": null,
+          "inputs": {
+            "COMPONENT": [
+              1,
+              [
+                10,
+                "Counter"
+              ]
+            ],
+            "MOUNT_ID": [
+              1,
+              [
+                10,
+                "counter-root"
+              ]
+            ],
+            "PROPS_JSON": [
+              1,
+              [
+                10,
+                "{\"initialCount\":3}"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b8": {
+          "opcode": "data_setvariableto",
+          "parent": "b6",
+          "next": "b10",
+          "inputs": {
+            "VALUE": [
+              3,
+              "b9",
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "Registry JSON",
+              "sample-registry"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b9": {
+          "opcode": "kubohiroyareactislands_componentRegistryJson",
+          "parent": "b8",
+          "next": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b10": {
+          "opcode": "data_setvariableto",
+          "parent": "b8",
+          "next": "b13",
+          "inputs": {
+            "VALUE": [
+              3,
+              "b11",
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "Descriptor has Counter",
+              "sample-has-counter"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b11": {
+          "opcode": "operator_contains",
+          "parent": "b10",
+          "next": null,
+          "inputs": {
+            "STRING1": [
+              3,
+              "b12",
+              [
+                10,
+                ""
+              ]
+            ],
+            "STRING2": [
+              1,
+              [
+                10,
+                "\"component\":\"Counter\""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b12": {
+          "opcode": "data_variable",
+          "parent": "b11",
+          "next": null,
+          "inputs": {},
+          "fields": {
+            "VARIABLE": [
+              "Descriptor JSON",
+              "sample-descriptor"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b13": {
+          "opcode": "data_setvariableto",
+          "parent": "b10",
+          "next": "b16",
+          "inputs": {
+            "VALUE": [
+              3,
+              "b14",
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "HTML has mount marker",
+              "sample-html-mount"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b14": {
+          "opcode": "operator_contains",
+          "parent": "b13",
+          "next": null,
+          "inputs": {
+            "STRING1": [
+              3,
+              "b15",
+              [
+                10,
+                ""
+              ]
+            ],
+            "STRING2": [
+              1,
+              [
+                10,
+                "data-tw-react-island=\"Counter\""
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b15": {
+          "opcode": "data_variable",
+          "parent": "b14",
+          "next": null,
+          "inputs": {},
+          "fields": {
+            "VARIABLE": [
+              "HTML fragment",
+              "sample-html"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b16": {
+          "opcode": "data_setvariableto",
+          "parent": "b13",
+          "next": "b19",
+          "inputs": {
+            "VALUE": [
+              3,
+              "b17",
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "Descriptor has count 3",
+              "sample-props"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b17": {
+          "opcode": "operator_contains",
+          "parent": "b16",
+          "next": null,
+          "inputs": {
+            "STRING1": [
+              3,
+              "b18",
+              [
+                10,
+                ""
+              ]
+            ],
+            "STRING2": [
+              1,
+              [
+                10,
+                "\"initialCount\":3"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "b18": {
+          "opcode": "data_variable",
+          "parent": "b17",
+          "next": null,
+          "inputs": {},
+          "fields": {
+            "VARIABLE": [
+              "Descriptor JSON",
+              "sample-descriptor"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "b19": {
+          "opcode": "data_setvariableto",
+          "parent": "b16",
+          "next": null,
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "Ready"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "Sample state",
+              "sample-state"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "",
+          "name": "Instructions",
+          "bitmapResolution": 1,
+          "md5ext": "backdrop.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "off",
+      "textToSpeechLanguage": null
+    }
+  ],
+  "monitors": [
+    {
+      "id": "sample-has-counter",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "Descriptor has Counter"
+      },
+      "spriteName": null,
+      "value": "",
+      "width": 0,
+      "height": 0,
+      "x": 18,
+      "y": 115,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "sample-html-mount",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "HTML has mount marker"
+      },
+      "spriteName": null,
+      "value": "",
+      "width": 0,
+      "height": 0,
+      "x": 18,
+      "y": 148,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    },
+    {
+      "id": "sample-props",
+      "mode": "default",
+      "opcode": "data_variable",
+      "params": {
+        "VARIABLE": "Descriptor has count 3"
+      },
+      "spriteName": null,
+      "value": "",
+      "width": 0,
+      "height": 0,
+      "x": 18,
+      "y": 181,
+      "visible": true,
+      "sliderMin": 0,
+      "sliderMax": 100,
+      "isDiscrete": true
+    }
+  ],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0",
+    "agent": "TurboWarp Plus minimal samples"
+  }
+}

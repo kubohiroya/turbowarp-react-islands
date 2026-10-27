@@ -1,0 +1,54 @@
+{
+  "baseURL": "https://kubohiroya.github.io/turbowarp-react-islands/",
+  "extension": {
+    "id": "kubohiroyareactislands",
+    "bundle": "dist/turbowarp-react-islands.js",
+    "unsandboxed": false
+  },
+  "samples": [
+    {
+      "name": "describe-counter-island",
+      "title": "React Islands minimal demo",
+      "checks": [
+        {
+          "variable": "sample-descriptor",
+          "jsonEquals": {
+            "kind": "react-island",
+            "version": 1,
+            "component": "Counter",
+            "mountId": "counter-root",
+            "props": {
+              "initialCount": 3
+            }
+          }
+        },
+        {
+          "variable": "sample-html",
+          "contains": "data-tw-react-island=\"Counter\""
+        },
+        {
+          "variable": "sample-registry",
+          "jsonEquals": [
+            {
+              "component": "Counter",
+              "module": "/assets/counter.js"
+            }
+          ]
+        },
+        {
+          "variable": "sample-has-counter",
+          "equals": true
+        },
+        {
+          "variable": "sample-html-mount",
+          "equals": true
+        },
+        {
+          "variable": "sample-props",
+          "equals": true
+        }
+      ],
+      "instructions": "Three checks become true; full JSON and HTML remain in variables."
+    }
+  ]
+}

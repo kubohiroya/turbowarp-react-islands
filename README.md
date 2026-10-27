@@ -7,6 +7,18 @@
 TurboWarp extension and TypeScript helpers for describing React islands inside
 HTML responses produced by `turbowarp-http-server` and `turbowarp-html`.
 
+## Runnable sample
+
+[**Open the demo in TurboWarp Editor**](https://turbowarp.org/editor?project_url=https%3A%2F%2Fkubohiroya.github.io%2Fturbowarp-react-islands%2Fsamples%2Fdescribe-counter-island.sb3) · [Download the SB3](https://kubohiroya.github.io/turbowarp-react-islands/samples/describe-counter-island.sb3)
+
+Choose **Allow** and click the green flag.
+Three checks become true; full JSON and HTML remain in variables. This demo generates declarations only; it does not render or hydrate React. The module path is a registration string and is not fetched. No React runtime, HTTP host, or external bundle is required.
+
+
+
+Editable sources and expected results: [`samples/README.md`](samples/README.md).
+`pnpm run samples:build` / `pnpm run samples:check` / `pnpm run pages:build`
+
 ## Positioning
 
 This package treats React as a rich GUI part, not as the whole programming
