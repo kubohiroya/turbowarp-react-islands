@@ -1,6 +1,6 @@
 {
   "name": "@kubohiroya/turbowarp-react-islands",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "TurboWarp extension and helpers for describing React islands in turbowarp-http-server HTML responses.",
   "author": {
     "name": "Hiroya Kubo",
