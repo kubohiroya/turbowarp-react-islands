@@ -1,6 +1,6 @@
 {
   "name": "@kubohiroya/turbowarp-react-islands",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "TurboWarp extension and helpers for describing React islands in turbowarp-http-server HTML responses.",
   "author": {
     "name": "Hiroya Kubo",
@@ -81,7 +81,7 @@
     "react-dom": "18.3.1"
   },
   "dependencies": {
-    "@kubohiroya/turbowarp-extension-data-editor": "^0.11.4"
+    "@kubohiroya/turbowarp-extension-data-editor": "^0.11.5"
   },
   "gitHead": "78570baedc751aa5d6e1494eb13abb61eed8bc99",
   "x-turbowarp-source": {
